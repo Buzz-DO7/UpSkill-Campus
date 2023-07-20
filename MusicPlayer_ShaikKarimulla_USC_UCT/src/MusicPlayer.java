@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Player {
+public class MusicPlayer {
 
     private Bitstream bitstream;
 
@@ -48,7 +48,7 @@ public class Player {
 
     private ArrayList<Song> aux = new ArrayList<Song>();
 
-    public Player() {
+    public MusicPlayer() {
         ActionListener buttonListenerPlayNow = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -482,4 +482,9 @@ public class Player {
     //<editor-fold desc="Getters and Setters">
 
     //</editor-fold>
+
+    public static void main(String[] args){
+        MusicPlayer musicPlayer = new MusicPlayer();
+        
+    }
 }
